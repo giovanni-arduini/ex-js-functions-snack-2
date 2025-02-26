@@ -1,17 +1,6 @@
-// const creaContatoreAutomatico = function (time) {
-//   let counter = 0;
-//   return () =>
-//     setInterval(() => {
-//       counter++;
-//       console.log(counter);
-//     }, time);
-// };
-
-// creaContatoreAutomatico(1000);
-
 const creaContatoreAutomatico = function (time) {
   let counter = 0;
-  return function () {
+  return () => {
     setInterval(() => {
       counter++;
       console.log(counter);
@@ -19,4 +8,5 @@ const creaContatoreAutomatico = function (time) {
   };
 };
 
-creaContatoreAutomatico(1000)();
+const contaOgniSecondo = creaContatoreAutomatico(1000);
+contaOgniSecondo();

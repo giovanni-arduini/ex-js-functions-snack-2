@@ -5,7 +5,7 @@ function contoAllaRovescia(n) {
     console.log(remaining);
     remaining--;
 
-    if (remaining < 0) {
+    if (remaining == 0) {
       clearInterval(interval);
       console.log("Tempo scaduto!");
     }

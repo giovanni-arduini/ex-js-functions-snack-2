@@ -1,5 +1,3 @@
-const quadrato = function(n){
-    return n * n
-}
+const quadrato = (n) => n * n;
 
-console.log(quadrato(3))
+quadrato(3);
